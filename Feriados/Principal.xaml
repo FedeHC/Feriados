@@ -1,0 +1,124 @@
+﻿<Window x:Class="Feriados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Feriados"
+        mc:Ignorable="d"
+        Title="Feriados 2018- Principal"
+        Height="700" Width="700"        
+        Icon="icono.png"
+        ResizeMode="NoResize"
+        Loaded="VentanaCargada"
+        Activated="VentanaFoco">
+
+    <Grid Margin="10,10,10,10">
+        <Label x:Name="lbNumero" Content="N°:&#xA;" HorizontalAlignment="Left" Margin="20,6,0,0" VerticalAlignment="Top" Width="60" Height="30" RenderTransformOrigin="0.582,-1.583"/>
+        <TextBox x:Name="txtNro" HorizontalAlignment="Left" Height="30" Margin="83,6,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" FontSize="18" TextAlignment="Center" FontWeight="Bold" BorderThickness="1" Background="#FF8DC0F3" Foreground="White" KeyDown="EnterTxtNro"/>
+        <Button x:Name="btIrNro" Content="Ir" HorizontalAlignment="Left" Height="30" Margin="148,6,0,0" VerticalAlignment="Top" Width="30" ToolTip="Ir al número de fila indicado" Click="BotonIrNro"/>
+
+        <Button x:Name="btPrimero" Content="&lt;&lt;&lt;" HorizontalAlignment="Left" Height="40" Margin="20,237,0,0" VerticalAlignment="Top" Width="130" Click="BotonPrimero" ToolTip="Ir al primer registro" FontSize="14"/>
+        <Button x:Name="btAnterior" Content="&lt;" HorizontalAlignment="Left" Height="40" Margin="165,237,0,0" VerticalAlignment="Top" Width="130" Click="BotonAtras" ToolTip="Ir al registro anterior" FontSize="14"/>
+
+        <Label x:Name="lbNombre" Content="Nombre:&#xA;" HorizontalAlignment="Left" Margin="20,46,0,0" VerticalAlignment="Top" Width="60" Height="30" RenderTransformOrigin="0.582,-1.583"/>
+        <TextBox x:Name="txtNombre" Height="30" Margin="83,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Left" Width="571" IsReadOnly="True"/>
+
+        <Label x:Name="lbFecha" Content="Fecha:" HorizontalAlignment="Left" Margin="20,82,0,0" VerticalAlignment="Top" Width="48" Height="30"/>
+        <TextBox x:Name="txtFecha" HorizontalAlignment="Left" Height="30" Margin="83,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" FontSize="14" IsReadOnly="True"/>
+
+        <Label x:Name="lbInamovible" Content="¿Inamovible?" HorizontalAlignment="Left" Margin="411,84,0,0" VerticalAlignment="Top" Width="78" Height="26" RenderTransformOrigin="-1.818,3.083"/>
+        <CheckBox x:Name="chkInamovible" Content="" HorizontalAlignment="Left" Margin="495,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.588,0.562" IsEnabled="False"/>
+
+        <Label x:Name="lbReligioso" Content="¿Religioso?" HorizontalAlignment="Left" Margin="561,84,0,0" VerticalAlignment="Top" Width="68" Height="26"/>
+        <CheckBox x:Name="chkReligioso" Content="" HorizontalAlignment="Left" Margin="635,88,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+
+        <Button x:Name="btSiguiente" Content="&gt;" HorizontalAlignment="Left" Height="40" Margin="380,237,0,0" VerticalAlignment="Top" Width="130" Click="BotonSiguiente" ToolTip="Ir al siguiente registro" FontSize="14"/>
+        <Button x:Name="btUltimo" Content="&gt;&gt;&gt;" HorizontalAlignment="Left" Height="40" Margin="524,237,0,0" VerticalAlignment="Top" Width="130" Click="BotonUltimo" ToolTip="Ir al último registro" FontSize="14"/>
+
+        <Label x:Name="lbDescripcion" Content="Descripción:&#xA;" HorizontalAlignment="Left" Margin="20,131,0,0" VerticalAlignment="Top" Width="75" Height="26" RenderTransformOrigin="0.567,-1.043"/>
+        <TextBox x:Name="txtDescripcion" Margin="20,158,0,0" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Visible" Height="74" VerticalAlignment="Top" RenderTransformOrigin="0.502,0.539" FontStyle="Italic" FontSize="14" HorizontalAlignment="Left" Width="636" IsReadOnly="True"/>
+
+        <Label x:Name="lbBuscar" Content="Buscar:" HorizontalAlignment="Left" Margin="374,323,0,0" VerticalAlignment="Top" Width="50" Height="24" RenderTransformOrigin="0.567,-1.043"/>
+        <TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Height="24" Margin="425,324,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Foreground="#FF004B97" KeyDown="EnterTxtBuscar"/>
+        <Button x:Name="btIrBuscar" Content="Ir" HorizontalAlignment="Left" Height="24" Margin="619,324,0,0" VerticalAlignment="Top" Width="35" ToolTip="Buscar en las celdas de la tabla" Click="BotonIrBuscar"/>
+
+        <Label x:Name="lbTabla" Content="Tabla:" HorizontalAlignment="Left" Margin="20,324,0,0" VerticalAlignment="Top" Width="50" Height="24" RenderTransformOrigin="0.567,-1.043"/>
+        <DataGrid x:Name="dgFeriados"
+                  Margin="20,353,0,0"
+                  ItemsSource="{Binding}"
+                  GridLinesVisibility="None"
+                  HorizontalAlignment="Left"
+                  Width="634" Height="220"
+                  VerticalAlignment="Top"
+                  FontSize="14"
+                  MouseLeftButtonUp="ClickDgFeriados"
+                  VerticalScrollBarVisibility="Auto"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  SelectedIndex="0"
+                  CanUserResizeRows="False"
+                  CanUserReorderColumns="False"
+                  CanUserSortColumns="False"
+                  AutoGenerateColumns="True" >
+            <!--
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="N°"  Binding="{Binding id}" />
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" />
+                <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}"/>
+                <DataGridCheckBoxColumn Header="¿Inamovible?" Binding="{Binding Inamovible}" Width="70" />
+                <DataGridCheckBoxColumn Header="¿Religioso?" Binding="{Binding Religioso}" Width="70"/>
+                <DataGridTextColumn Header="Descripción" Binding="{Binding Descripcion}" />
+            </DataGrid.Columns>
+            -->            
+            
+            <DataGrid.Resources>
+                <!-- El color de fondo la fila activa -->
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="LightBlue" />
+
+                <!-- El color del texto la fila activa -->
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+
+                <!-- El color de fondo la fila inactiva -->
+                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="LightBlue"/>
+            </DataGrid.Resources>
+
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+
+        <Button x:Name="btAgregarRegistro" Content="Agregar registros" Margin="20,582,0,0" VerticalAlignment="Top" Height="39" FontSize="14" HorizontalAlignment="Left" Width="200" Click="BotonAgregar">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFB2FFB5" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btBorrarRegistro" Content="Borrar registros" Margin="240,582,0,0" VerticalAlignment="Top" Height="39" FontSize="14" HorizontalAlignment="Left" Width="200" Click="BotonBorrar">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFFFCFCF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btEditarRegistros" Content="Editar registros" Margin="456,582,0,0" VerticalAlignment="Top" Height="39" FontSize="14" Click="BotonEditar" HorizontalAlignment="Left" Width="200">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFAFD0FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

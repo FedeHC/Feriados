@@ -1,0 +1,37 @@
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\bin\Debug\DB1.accdb
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\bin\Debug\Feriados.exe.config
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\bin\Debug\Feriados.exe
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\bin\Debug\Feriados.pdb
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados.csprojResolveAssemblyReference.cache
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\MainWindow.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\App.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados_Content.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados_MarkupCompile.cache
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados_MarkupCompile.lref
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\MainWindow.baml
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados.g.resources
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados.Properties.Resources.resources
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados.csproj.GenerateResource.Cache
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados.exe
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Proyecto Parcial 2\Feriados\Feriados\Feriados\obj\Debug\Feriados.pdb
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\bin\Debug\DB.accdb
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\bin\Debug\Feriados.exe.config
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\bin\Debug\Feriados.exe
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\bin\Debug\Feriados.pdb
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Agregar.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Borrar.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Principal.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Editar.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\App.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Feriados_Content.g.cs
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Feriados_MarkupCompile.cache
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Feriados_MarkupCompile.lref
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Agregar.baml
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Borrar.baml
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Principal.baml
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Editar.baml
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Feriados.g.resources
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Feriados.Properties.Resources.resources
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Feriados.csproj.GenerateResource.Cache
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Feriados.exe
+C:\Users\nan\Desktop\Mis Archivos\Ejercicios DB\Feriados\Feriados\obj\Debug\Feriados.pdb
