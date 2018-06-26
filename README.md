@@ -4,9 +4,9 @@ Aplicación web realizada como trabajo de parcial para la materia de Ingeniería
 
 El trabajo consiste en una app de escritorio creada con Visual Studio 2015, cuya tarea es hacer [ABM](https://es.wikipedia.org/wiki/CRUD) a partir de una base de datos creada con Microsoft Access.
 
-Dicha app deberá qudar como MVVW para ser entregado como trabajo final de la materia.
+Dicha app deberá quedar como MVVW para ser entregado como trabajo final de la materia.
 
-* *Alumno*: **Federico H. Cacace**
-* *Profesor*: **Gabriel Ezquivel**
+* *Alumno*: **Federico H. C:*
+* *Profesor*: **Gabriel E.**
 
 ![Imagen](https://raw.githubusercontent.com/FedeHC/fedehc.github.io/master/images/web7.jpg)
