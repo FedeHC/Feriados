@@ -6,7 +6,7 @@ El trabajo consiste en una app de escritorio creada con Visual Studio 2015, cuya
 
 Dicha app deberá quedar como MVVW para ser entregado como trabajo final de la materia.
 
-* *Alumno*: **Federico H. C:*
-* *Profesor*: **Gabriel E.**
+* *Alumno: **Federico H. C.***
+* *Profesor: **Gabriel E.***
 
 ![Imagen](https://raw.githubusercontent.com/FedeHC/fedehc.github.io/master/images/web7.jpg)
