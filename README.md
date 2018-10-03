@@ -9,4 +9,4 @@ Dicha app deberá quedar como MVVW para ser entregado como trabajo final de la m
 * *Alumno: Federico H. C.*
 * *Profesor: Gabriel E.*
 
-![Imagen](https://raw.githubusercontent.com/FedeHC/fedehc.github.io/master/images/web7.jpg)
+![Imagen](https://i.imgur.com/7QrHmoT.jpg)
